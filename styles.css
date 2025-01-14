@@ -1,0 +1,295 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #004D7F;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+ .slider-container {
+    width: 50%;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+  }
+  
+/* Slider for Scrolling Images */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
+}
+
+/* Scrolling Advertisement Styling */
+.scrolling-ad {
+    background-color: #f44336; /* Red background for visibility */
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    top: 100%; /* Positioned below the image slider */
+    left: 0;
+    z-index: 1000; /* Ensures the ad is on top of other content */
+    text-align: center;
+}
+
+#ad-text {
+    white-space: nowrap;
+    animation: scroll-left 15s linear infinite;
+}
+
+/* Scrolling animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%); /* Start off-screen from the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move off-screen to the left */
+    }
+}
+
+/* Main Content Section */
+.content {
+    margin-top: 120px; /* Add margin to push content below the fixed ad */
+    padding: 20px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.nav-links {
+
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #f44336;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.slider img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Scrolling Animation for Image Slider */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+/* About Section */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Important Features Section */
+.features {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.features ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.features li {
+    font-size: 18px;
+}
+
+/* Courses Section */
+.courses {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.courses h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.courses ul {
+    list-style-type: none;
+}
+
+.courses li {
+    font-size: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+}
+/* Modal Styles */
+.course-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#course-link {
+    text-decoration: none;
+    color: #f44336;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.location iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* Footer */
+footer {
+    background-color: #004D7F;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: white;
+}
+
+.social-media a:hover {
+    color: #f44336;
+}
+
+.youtube-video iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+}
